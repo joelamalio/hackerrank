@@ -1,7 +1,5 @@
 package br.com.joelamalio.hackerrank.algorithms.warmup.diagonaldifference;
 
-import java.util.Scanner;
-
 import br.com.joelamalio.hackerrank.algorithms.warmup.util.Util;
 
 public class Solution {
@@ -28,8 +26,9 @@ public class Solution {
 		 * 3 => 15
 		 * 4 => 1
 		 * 9 => 52
+		 * 59 => 11600
 		 */
-		int[][] a = Util.getArray2(Solution.class, "9");
+		int[][] a = Util.getInteger2ArrayNElements("inputs/algorithms/warmup/diagonaldifference/test-case-9");
 		int result = diagonalDifference(a);
 	    System.out.println(result);
 	}

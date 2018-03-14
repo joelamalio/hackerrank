@@ -27,7 +27,7 @@ public class Solution {
 		/*
 		 * 0 => 2
 		 */
-		int[] a = Util.getArray(Solution.class, "test-case-0");
+		int[] a = Util.getInteger1ArrayNElements("inputs/algorithms/warmup/birthdaycakecandles/test-case-0");
 		int result = birthdayCakeCandles(a.length, a);
 		System.out.println(result);
 	}

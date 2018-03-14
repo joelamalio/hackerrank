@@ -27,11 +27,9 @@ public class Solution {
 	
 	public static void main(String[] args) throws Exception {
 		/*
-		 * 3 => 15
-		 * 4 => 1
-		 * 9 => 52
+		 * 6 => 0.500000 0.333333 0.166667
 		 */
-		int[] a = Util.getArray(Solution.class, "6");
+		int[] a = Util.getInteger1ArrayNElements("inputs/algorithms/warmup/plusminus/test-case-6");
 		plusMinus(a);
 	    
 	}

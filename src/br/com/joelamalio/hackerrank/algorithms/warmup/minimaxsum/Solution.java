@@ -41,7 +41,7 @@ public class Solution {
 		 * 11 => 1575456874 2357937445
 		 * 12 => 2572095760 2999145560
 		 */
-		int[] a = Util.getArrayInteger1Level(Solution.class, "test-case-12");
+		int[] a = Util.getInteger1Array("inputs/algorithms/warmup/minimaxsum/test-case-12");
 		miniMaxSum(a);
 	}
 

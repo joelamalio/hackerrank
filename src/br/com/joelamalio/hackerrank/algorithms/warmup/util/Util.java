@@ -7,11 +7,8 @@ import java.net.URL;
 
 public class Util {
 	
-	public static int[] getArrayInteger1Level(Class clazz, String fileName) throws Exception {
-		URL path = clazz.getResource(fileName);
-		File file = new File(path.getFile());
-		FileReader reader = new FileReader(file);
-		BufferedReader br = new BufferedReader(reader);
+	public static int[] getInteger1Array(String fileName) throws Exception {
+		BufferedReader br = getBufferedReader(fileName);
 
 		try {
 			String line = br.readLine();
@@ -29,11 +26,8 @@ public class Util {
 		}
 	}
 	
-	public static int[] getArray(Class clazz, String fileName) throws Exception {
-		URL path = clazz.getResource(fileName);
-		File file = new File(path.getFile());
-		FileReader reader = new FileReader(file);
-		BufferedReader br = new BufferedReader(reader);
+	public static int[] getInteger1ArrayNElements(String fileName) throws Exception {
+		BufferedReader br = getBufferedReader(fileName);
 
 		try {
 			int n = Integer.valueOf(br.readLine());
@@ -54,12 +48,9 @@ public class Util {
 			br.close();
 		}
 	}
-
-	public static int[][] getArray2(Class clazz, String fileName) throws Exception {
-		URL path = clazz.getResource(fileName);
-		File file = new File(path.getFile());
-		FileReader reader = new FileReader(file);
-		BufferedReader br = new BufferedReader(reader);
+	
+	public static int[][] getInteger2ArrayNElements(String fileName) throws Exception {
+		BufferedReader br = getBufferedReader(fileName);
 
 		try {
 			int n = Integer.valueOf(br.readLine());
@@ -81,6 +72,13 @@ public class Util {
 		} finally {
 			br.close();
 		}
+	}
+	
+	private static BufferedReader getBufferedReader(String fileName) throws Exception {
+		URL path = Util.class.getClassLoader().getResource(fileName);
+		File file = new File(path.getFile());
+		FileReader reader = new FileReader(file);
+		return new BufferedReader(reader);
 	}
 
 }
