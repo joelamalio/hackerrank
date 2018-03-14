@@ -7,6 +7,28 @@ import java.net.URL;
 
 public class Util {
 	
+	public static int[] getArrayInteger1Level(Class clazz, String fileName) throws Exception {
+		URL path = clazz.getResource(fileName);
+		File file = new File(path.getFile());
+		FileReader reader = new FileReader(file);
+		BufferedReader br = new BufferedReader(reader);
+
+		try {
+			String line = br.readLine();
+			String cell[] = line.split(" ");
+			int n = cell.length;
+			int[] a = new int[n];
+
+			for (int i = 0; i < n; i++) {
+				a[i] = Integer.valueOf(cell[i]);
+			}
+
+			return a;
+		} finally {
+			br.close();
+		}
+	}
+	
 	public static int[] getArray(Class clazz, String fileName) throws Exception {
 		URL path = clazz.getResource(fileName);
 		File file = new File(path.getFile());
