@@ -1,2 +1,4 @@
-/bin/
-/.settings/*.*
+/algorithms/bin/
+/algorithms/.settings/*.*
+/java/bin/
+/java/.settings/*.*
