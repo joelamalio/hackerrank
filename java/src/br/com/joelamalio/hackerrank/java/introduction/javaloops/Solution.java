@@ -1,4 +1,4 @@
-package br.com.joelamalio.hackerrank.java.javaloops;
+package br.com.joelamalio.hackerrank.java.introduction.javaloops;
 
 import java.util.Scanner;
 
