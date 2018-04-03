@@ -7,7 +7,6 @@ public class Solution {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		String S = in.next();
 		BigInteger a = in.nextBigInteger();
 		BigInteger b = in.nextBigInteger();
 		
