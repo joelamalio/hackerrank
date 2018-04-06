@@ -11,6 +11,7 @@ public class Solution {
 		for (int i = 0; i < n; i++) {
 			array[i] = scan.nextInt();
 		}
+		scan.close();
 		
 		int amount = 0;
 		
