@@ -1,4 +1,4 @@
-package br.com.joelamalio.hackerrank.java.phonebook;
+package br.com.joelamalio.hackerrank.java.datastructures.phonebook;
 
 import java.util.HashMap;
 import java.util.Map;
