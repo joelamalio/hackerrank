@@ -1,4 +1,4 @@
-package br.com.joelamalio.hackerrank.java.datastructures.javadequeue;
+package br.com.joelamalio.hackerrank.java.util;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

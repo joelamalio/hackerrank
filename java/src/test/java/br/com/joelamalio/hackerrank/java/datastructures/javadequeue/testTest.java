@@ -5,6 +5,8 @@ import java.io.ByteArrayInputStream;
 import org.junit.Assert;
 import org.junit.Test;
 
+import br.com.joelamalio.hackerrank.java.util.TestConsoleAb;
+
 public class testTest extends TestConsoleAb {
 
 	@Test
