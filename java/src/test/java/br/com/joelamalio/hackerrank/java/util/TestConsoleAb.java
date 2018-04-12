@@ -16,12 +16,21 @@ public abstract class TestConsoleAb {
 	@Before
 	public void setUpStreams() {
 	    System.setOut(new PrintStream(outContent));
+	    input = new StringBuilder();
 	}
 
 	@After
 	public void restoreStreams() {
 	    System.setOut(System.out);
 	    System.setIn(System.in);
+	}
+	
+	protected void input(String value) {
+		input.append(value).append("\n");
+	}
+	
+	protected String formatResult(String value) {
+		return value.replace(" ", "\r\n").concat("\r\n");
 	}
 	
 }
