@@ -1,4 +1,4 @@
-package br.com.joelamalio.hackerrank.algorithms.br.com.joelamalio.hackerrank.algorithms.implementation.appleandorange;
+package br.com.joelamalio.hackerrank.algorithms.implementation.appleandorange;
 
 import java.io.ByteArrayInputStream;
 
