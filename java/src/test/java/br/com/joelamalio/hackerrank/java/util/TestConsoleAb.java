@@ -12,11 +12,13 @@ public abstract class TestConsoleAb {
 	protected final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 	protected ByteArrayInputStream inContent;
 	protected StringBuilder input;
+	protected StringBuilder output;
 
 	@Before
 	public void setUpStreams() {
 	    System.setOut(new PrintStream(outContent));
 	    input = new StringBuilder();
+	    output = new StringBuilder();
 	}
 
 	@After
@@ -27,6 +29,10 @@ public abstract class TestConsoleAb {
 	
 	protected void input(String value) {
 		input.append(value).append("\n");
+	}
+	
+	protected void output(String value) {
+		output.append(value).append("\r\n");
 	}
 	
 	protected String formatResult(String value) {
