@@ -3,8 +3,7 @@ package br.com.joelamalio.hackerrank.algorithms.warmup.birthdaycakecandles;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-
-import br.com.joelamalio.hackerrank.algorithms.warmup.util.Util;
+import java.util.Scanner;
 
 public class Solution {
 	
@@ -22,18 +21,7 @@ public class Solution {
 		
 		return Collections.max(counts.values());
 	}
-	
-	public static void main(String[] args) throws Exception {
-		/*
-		 * 0 => 2
-		 */
-		int[] a = Util.getInteger1ArrayNElements("inputs/algorithms/warmup/birthdaycakecandles/test-case-0");
-		int result = birthdayCakeCandles(a.length, a);
-		System.out.println(result);
-	}
 
-
-	/*
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int n = in.nextInt();
@@ -44,5 +32,5 @@ public class Solution {
 		int result = birthdayCakeCandles(n, ar);
 		System.out.println(result);
 	}
-	*/
+	
 }
