@@ -53,9 +53,4 @@ public class Solution {
 		in.close();
 	}
 	
-	/*
-	 * 0 => 1 1
-	 * 1 => 0 0
-	 * 11 => 5046 5659
-	 */
 }
