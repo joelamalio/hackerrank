@@ -10,10 +10,6 @@ public class Solution {
 		while (n-- != 0) {
 			String userName = scan.nextLine();
 
-			if ("JuliaZ007".equals(userName)) {
-				//userName = userName.replaceAll("Z", "z");
-			}
-			
 			if (userName.matches(UsernameValidator.regularExpression)) {
 				System.out.println("Valid");
 			} else {
@@ -24,10 +20,5 @@ public class Solution {
 }
 
 class UsernameValidator {
-	/*
-	 * Write regular expression here.
-	 */
 	public static final String regularExpression = "(^[a-zA-Z]{1}[a-zA-Z0-9_]{7,29})$";
 }
-
-//^([a-zA-Z][a-zA-Z0-9_]*){8,30}$
