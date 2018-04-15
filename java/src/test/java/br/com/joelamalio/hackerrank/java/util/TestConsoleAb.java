@@ -1,7 +1,12 @@
 package br.com.joelamalio.hackerrank.java.util;
 
+import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.IOException;
 import java.io.PrintStream;
 
 import org.junit.After;
@@ -27,6 +32,14 @@ public abstract class TestConsoleAb {
 	    System.setIn(System.in);
 	}
 	
+	protected void setInputFileByPath(String filePath) {
+		System.setIn(getInputStream(filePath));
+	}
+	
+	protected void setOutputFileByPath(String filePath) {
+		readFile(filePath);
+	}
+	
 	protected void input(String value) {
 		input.append(value).append("\n");
 	}
@@ -37,6 +50,55 @@ public abstract class TestConsoleAb {
 	
 	protected String formatResult(String value) {
 		return value.replace(" ", "\r\n").concat("\r\n");
+	}
+	
+	private byte[] readBytesFromFile(String filePath) {
+        FileInputStream fis = null;
+        byte[] bytes = null;
+
+        try {
+            File file = getFile(filePath);
+            bytes = new byte[(int) file.length()];
+            fis = new FileInputStream(file);
+            fis.read(bytes);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fis != null) {
+                try {
+                    fis.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        return bytes;
+    }
+	
+	private File getFile(String filePath) {
+		ClassLoader classLoader = getClass().getClassLoader();
+		return new File(classLoader.getResource(filePath).getFile());
+	}
+	
+	protected ByteArrayInputStream getInputStream(String filePath) {
+		return new ByteArrayInputStream(readBytesFromFile(filePath));
+	}
+	
+	private void readFile(String filePath) {
+		try {
+		BufferedReader br = new BufferedReader(new FileReader(getFile(filePath)));
+		    String line = br.readLine();
+
+		    while (line != null) {
+		        output.append(line);
+		        output.append(System.lineSeparator());
+		        line = br.readLine();
+		    }
+		    br.close();
+		} catch (Exception e) {
+		} finally {
+		}
 	}
 	
 }
