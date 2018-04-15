@@ -48,10 +48,6 @@ public abstract class TestConsoleAb {
 		output.append(value).append("\r\n");
 	}
 	
-	protected String formatResult(String value) {
-		return value.replace(" ", "\r\n").concat("\r\n");
-	}
-	
 	private byte[] readBytesFromFile(String filePath) {
         FileInputStream fis = null;
         byte[] bytes = null;
