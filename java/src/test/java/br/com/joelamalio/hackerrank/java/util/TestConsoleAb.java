@@ -77,7 +77,7 @@ public abstract class TestConsoleAb {
 		return new File(classLoader.getResource(filePath).getFile());
 	}
 	
-	protected ByteArrayInputStream getInputStream(String filePath) {
+	private ByteArrayInputStream getInputStream(String filePath) {
 		return new ByteArrayInputStream(readBytesFromFile(filePath));
 	}
 	
