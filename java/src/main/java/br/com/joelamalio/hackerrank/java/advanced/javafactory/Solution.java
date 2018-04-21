@@ -65,6 +65,10 @@ class Cake implements Food {
 
 class FoodFactory {
 	public Food getFood(String order) {
+		if (order.equals("pizza")) {
+			return new Pizza();
+		}
+		return new Cake();
 	}// End of getFood method
 
 }// End of factory class
