@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class Solution {
 	
+	//FIXME Without solution
 	static int getTotalX(int[] a, int[] b) {
+		return 0;
     }
 
     public static void main(String[] args) {
