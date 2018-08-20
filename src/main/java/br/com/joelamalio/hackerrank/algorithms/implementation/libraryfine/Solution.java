@@ -27,7 +27,7 @@ public class Solution {
 	private static final Scanner scanner = new Scanner(System.in);
 
 	public static void main(String[] args) throws IOException {
-		/*BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
 		String[] d1M1Y1 = scanner.nextLine().split(" ");
 
@@ -52,10 +52,6 @@ public class Solution {
 
 		bufferedWriter.close();
 
-		scanner.close();*/
-		
-		System.out.println(libraryFine(9, 6, 15, 6, 6, 2015) == 45);
-		System.out.println(libraryFine(1, 1, 2018, 12, 31, 2016) == 10000);
-		System.out.println(libraryFine(2, 7, 1014, 1, 1, 1015)/* == 0*/);
+		scanner.close();
 	}
 }
