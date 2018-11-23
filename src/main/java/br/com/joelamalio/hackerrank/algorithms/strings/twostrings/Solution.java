@@ -1,5 +1,7 @@
 package br.com.joelamalio.hackerrank.algorithms.strings.twostrings;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -27,7 +29,7 @@ public class Solution {
 	private static final Scanner scanner = new Scanner(System.in);
 
 	public static void main(String[] args) throws IOException {
-		/*BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
 		int q = scanner.nextInt();
 		scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
@@ -45,11 +47,11 @@ public class Solution {
 
 		bufferedWriter.close();
 
-		scanner.close();*/
-		
+		scanner.close();
+		/*
 		String s1 = "hitcwvrtvizzztsecgtez";
 		String s2 = "alflkudnnayylualdlqlklyofomfoooqmnmuakdfxqxlkafxopolmaxukuopkqqpll";
 		System.out.println(twoStrings(s1, s2));
-		
+		*/
 	}
 }

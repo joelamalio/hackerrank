@@ -23,5 +23,6 @@ public class Solution {
 		}
 		long result = aVeryBigSum(n, ar);
 		System.out.println(result);
+		in.close();
 	}
 }

@@ -31,6 +31,7 @@ public class Solution {
 		}
 		int result = birthdayCakeCandles(n, ar);
 		System.out.println(result);
+		in.close();
 	}
 	
 }

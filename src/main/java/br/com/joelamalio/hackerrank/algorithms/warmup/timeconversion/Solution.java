@@ -24,6 +24,7 @@ public class Solution {
         String s = in.next();
         String result = timeConversion(s);
         System.out.println(result);
+        in.close();
     }
 	
 }

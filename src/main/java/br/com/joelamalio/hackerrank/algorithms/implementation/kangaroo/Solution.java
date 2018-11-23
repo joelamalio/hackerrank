@@ -29,6 +29,7 @@ public class Solution {
         int v2 = in.nextInt();
         String result = kangaroo(x1, v1, x2, v2);
         System.out.println(result);
+        in.close();
     }
     
     /*

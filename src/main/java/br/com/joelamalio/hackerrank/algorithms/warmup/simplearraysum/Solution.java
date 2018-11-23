@@ -22,5 +22,6 @@ public class Solution {
 		}
 		int result = simpleArraySum(n, ar);
 		System.out.println(result);
+		in.close();
 	}
 }

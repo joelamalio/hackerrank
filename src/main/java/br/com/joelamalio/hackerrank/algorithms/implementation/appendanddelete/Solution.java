@@ -1,9 +1,6 @@
 package br.com.joelamalio.hackerrank.algorithms.implementation.appendanddelete;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Scanner;
 
 public class Solution {
 
